@@ -32,7 +32,7 @@ _image.raw:
 	sudo fai-diskimage -v \
 		--hostname debian-$(DIST) \
 		--size $(SPACE)G \
-		--class DEBIAN,$(UPPER_DIST),AMD64,GRUB_PC,CLOUD,$(UPPER_CLOUD) \
+		--class DEBIAN,$(UPPER_DIST),AMD64_BIOS,GRUB_PC,CLOUD,$(UPPER_CLOUD) \
 		--cspace $(PWD)/config_space $(CLOUD)-$(DIST)-image.raw
 ifeq ($(FORMAT_NEEDED), vhd)
 	qemu-img convert -f raw -o subformat=fixed,force_size -O vpc \

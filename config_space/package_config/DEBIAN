@@ -1,4 +1,4 @@
-PACKAGES install-norec AMD64
+PACKAGES install-norec AMD64_BIOS
 linux-image-amd64
 
 PACKAGES install DHCPC
