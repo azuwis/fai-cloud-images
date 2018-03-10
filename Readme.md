@@ -50,6 +50,7 @@ First of all, we are pretty confident, that our generic-vm-image should boot mos
         +-- package_config
         +-- scripts
                 +-- AZURE
+                +-- BACKPORTS
                 +-- CLOUD
                 +-- DEBIAN
                 +-- EC2
