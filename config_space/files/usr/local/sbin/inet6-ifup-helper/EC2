@@ -12,7 +12,7 @@ DUIDFILE="/var/lib/dhcp/dhclient-6.$IFACE.leases"
 case "$MODE" in
     start)
         ip link set $IFACE up
-        /lib/ifupdown/wait-for-ll6.sh || exit 1
+        /lib/ifupdown/wait-for-ll6.sh || exit 0
         /sbin/dhclient -v -6 -nw -pf $PIDFILE -lf $LEASESFILE -I -df $DUIDFILE $IFACE
         ;;
     stop)
